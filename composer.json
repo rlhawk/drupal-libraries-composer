@@ -58,6 +58,7 @@
             "npm-asset/clipboard": "web/libraries/clipboard",
             "npm-asset/cropper": "web/libraries/cropper",
             "npm-asset/dropzone": "web/libraries/dropzone",
+            "npm-asset/jquery-colorbox": "web/libraries/colorbox",
             "npm-asset/slick-carousel": "web/libraries/slick"
         }
     }
