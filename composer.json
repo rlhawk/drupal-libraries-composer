@@ -1,0 +1,64 @@
+{
+    "name": "rlhawk/drupal-libraries-example",
+    "description": "Example files for implementing a custom libraries solution in Drupal.",
+    "type": "project",
+    "license": "GPL-3.0",
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "assets": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    },
+    "require": {
+        "frontpack/composer-assets-plugin": "^0.9.4",
+        "npm-asset/chosen-js": "^1.8",
+        "npm-asset/clipboard": "^2.0",
+        "npm-asset/cropper": "^4.0",
+        "npm-asset/dropzone": "^5.5",
+        "npm-asset/jquery-colorbox": "^1.6",
+        "npm-asset/slick-carousel": "^1.8"
+    },
+    "config": {
+        "sort-packages": true,
+        "assets-dir": "web/libraries/misc",
+        "assets-strategy": "copy",
+        "assets-files": {
+            "npm-asset/chosen-js": [
+                "chosen-sprite.png",
+                "chosen-sprite@2x.png",
+                "chosen.jquery.min.js",
+                "chosen.min.css"
+            ],
+            "npm-asset/clipboard": [
+                "dist/clipboard.min.js"
+            ],
+            "npm-asset/cropper": [
+                "dist/cropper.min.css",
+                "dist/cropper.min.js"
+            ],
+            "npm-asset/jquery-colorbox": [
+                "jquery.colorbox-min.js"
+            ],
+            "npm-asset/dropzone": [
+                "dist/dropzone.css",
+                "dist/dropzone.js"
+            ],
+            "npm-asset/slick-carousel": [
+                "slick/slick.min.js",
+                "slick/slick.css",
+                "slick/slick-theme.css"
+            ]
+        },
+        "assets-target": {
+            "npm-asset/chosen-js": "web/libraries/chosen",
+            "npm-asset/clipboard": "web/libraries/clipboard",
+            "npm-asset/cropper": "web/libraries/cropper",
+            "npm-asset/dropzone": "web/libraries/dropzone",
+            "npm-asset/slick-carousel": "web/libraries/slick"
+        }
+    }
+}
